@@ -1,8 +1,9 @@
 ### EX: 11.b Singly Linked List (Insertion and all operation)
 
 
-### Aim: To Write a python program to add new element at the start of the list.
+### Aim: 
 
+To Write a python program to add new element at the start of the list.
 
 ### Algorithm:
 
@@ -19,46 +20,52 @@ STEP 5 : Print the result.
 STEP 6 : Stop.
 
 ### Program:
-```
+
+```python
+
+# Name: Nidhish B
+# Reg.No: 212223050032
+
 class Node:
-            def     __init__ (self, data):
-                  self.data = data
-                  self.next = None
+  def __init__(self, data):
+    self.data = data
+    self.next = None
 
 class LinkedList:
-            def      __init__ (self):
-                      self.head = None
+  def __init__(self):
+    self.head = None
 
-            def push_front(self, newElement):
-                    newnode = Node(newElement)
-                    newnode.next=self.head
-                    self.head = newnode
- 
-              def PrintList(self):
-                     temp = self.head
-                     if(temp != None):
-           
-                           print("The list contains:", end=" ")
-                           while (temp != None):
-                                print(temp.data, end=" ")
-                                temp = temp.next
-                                print()
-                            else:
-                                print("The list is empty.")
-
+  def push_front(self, newElement):
+      newnode=Node(newElement)
+      newnode.next=self.head
+      self.head=newnode
+      
+  def PrintList(self):
+    temp = self.head
+    if(temp != None):
+      print("The list contains:", end=" ")
+      while (temp != None):
+        print(temp.data, end=" ")
+        temp = temp.next
+      print()
+    else:
+      print("The list is empty.")
 
 MyList = LinkedList()
+
 MyList.push_front(10)
 MyList.push_front(20)
 MyList.push_front(30)
 MyList.PrintList()
 ```
+
 ### Output:
-![image](https://github.com/user-attachments/assets/4dae3c02-c85a-4294-9c03-294102d7fd9c)
 
+![image](https://github.com/user-attachments/assets/55c5112f-5c72-427c-8f3f-e5eef6488463)
 
+### Result: 
 
-### Result: Thus, the given program is implemented and executed successfully .
+Thus,the given program is implemented and executed successfully.
  
 
 
